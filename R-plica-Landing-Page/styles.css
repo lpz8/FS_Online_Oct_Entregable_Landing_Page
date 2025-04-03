@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.hero-section {
+    background-image: url('images/referencia-sk01.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 900px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    color: white;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    background-color: #ff6f91; 
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px; 
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #ff4d73; 
+}
+
+
+.description {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.description p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 480px) {
+    .hero-section {
+        height: 660px; 
+    }
+
+    .logo {
+        font-size: 32px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+    .hero-section {
+        height: 880px;
+    }
+
+    .logo {
+        font-size: 33px;
+    }
+}
